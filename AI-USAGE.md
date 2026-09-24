@@ -9,44 +9,53 @@ looks exactly like what it is.
 
 ## 1. How I used AI
 
-At least six entries. One per real use. Every entry needs a commit link.
+### 2026-09-24 - Repository setup and branding configuration
 
-### YYYY-MM-DD - short title
+- **Tool:** Gemini
+- **What I asked for:** Step-by-step guidance on customizing the template repository, including setting up `LICENSE`, editing `client/index.html` tags, and writing the root `README.md` for GradePulse.
+- **What it gave back:** HTML header snippets, updated open-source license text, and structured Markdown for the main project README.
+- **What I kept, what I changed, and why:** I kept the overall HTML meta tag layout but replaced the placeholder app titles with "GradePulse | Grade Tracker & Final Grade Forecaster" to reflect the actual HAU grade tracking application scope.
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
 
-- **Tool:**
-- **What I asked for:**
-- **What it gave back:**
-- **What I kept, what I changed, and why:**
-- **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/SHA
+### 2026-09-24 - PowerShell terminal navigation debugging
+
+- **Tool:** Gemini
+- **What I asked for:** Diagnosis of directory errors encountered when attempting to run `cd client` commands while working inside the `server/` directory.
+- **What it gave back:** Explanation of current working directory context in monorepo structures and navigation commands using relative paths (`cd ..\client`).
+- **What I kept, what I changed, and why:** Kept the exact navigation steps to successfully run the local Vite development build (`npm run dev`) from the correct folder context.
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
+
+### 2026-09-24 - Project Increment Report scaffolding
+
+- **Tool:** Gemini
+- **What I asked for:** Guidance on structuring the Week 1 increment report (`project/REPORT.md` / `project/README.md`) according to course rubrics.
+- **What it gave back:** Markdown structure covering changes made, purpose, blockers encountered, and remaining tasks.
+- **What I kept, what I changed, and why:** Kept the report headings and refined the specific accomplishments and blockers to accurately reflect my setup process in VS Code.
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
+
+*(Entries 4 to 6 will be added in Weeks 2 and 3 as API routes and forecasting components are developed.)*
 
 ## 2. Where the AI got it wrong
 
-Three cases. Be specific. If you write that the AI was never wrong, this section
-scores zero.
+### Case 1 - Incorrect directory path assumption
 
-### Case 1 - short title
+- **What it gave me:** Shell command steps instructing to execute `cd client` immediately after running package installations inside the `server/` folder.
+- **What was wrong with it:** Executing `cd client` from inside `server/` resulted in a `PathNotFoundException` in PowerShell because `client` lives in the parent root directory, not inside `server/`.
+- **What I did instead:** Executed `cd ..\client` to step back to the root level first before entering the client workspace.
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
 
-- **What it gave me:**
-- **What was wrong with it:**
-- **What I did instead:**
-- **Commit:** https://github.com/YOUR-USERNAME/YOUR-REPO/commit/SHA
+*(Cases 2 and 3 will be logged during backend development and UI integration.)*
 
 ## 3. Who wrote what
 
-At least a fifth of this project is code you wrote yourself. Name it, and explain
-it in your own words.
-
-> Group projects: give each member their own heading below, and use your GitHub
-> handle as the heading. You are graded on your own section.
-
 ### Written by me
 
-- **File:**
-- **Commit:**
-- **What it does and why it is built this way:**
+- **File:** `client/index.html`
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
+- **What it does and why it is built this way:** Configures the document head and title tag for the single-page application entry point, ensuring accurate branding and SEO meta descriptions when loaded in the browser.
 
 ### The AI-written part I understand best
 
-- **File:**
-- **Commit:**
-- **What it does and why we kept it:**
+- **File:** `README.md`
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
+- **What it does and why we kept it:** Defines the project documentation structure (overview, installation, running instructions, features, and project structure) so external readers can run and evaluate the application from source code alone.
