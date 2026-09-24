@@ -1,20 +1,26 @@
-# Project documents
+# GradePulse — Grade Tracker & Final Grade Forecaster
 
-Everything your project is marked on that is not code. Keep it here, in the
-repository, so it is versioned alongside the thing it describes.
+**Live site:** https://nickmorata07.github.io/fullstack-final-project/  
+**API:** https://your-api.onrender.com/healthz  
+**AI Usage Log:** [AI-USAGE.md](./AI-USAGE.md)
 
-| File | What it is | When |
-| --- | --- | --- |
-| [01-proposal.md](01-proposal.md) | the revised proposal | finals, m8a1 |
-| [02-mockup.md](02-mockup.md) | what the app will look like | finals, m8a2 |
-| [03-design-system.md](03-design-system.md) | colours, type, components | finals, m8a3 |
-| [04-weekly-reports.md](04-weekly-reports.md) | a few lines a week | every week |
-| [05-demo-video.md](05-demo-video.md) | the recording, and its plan | the end |
-| [06-security-and-privacy.md](06-security-and-privacy.md) | what you checked before making this public | before your first push |
+An academic performance monitoring tool that helps Holy Angel University (HAU) students and instructors track current course standings and calculate the exact minimum exam scores required to reach target final grades.
 
-Put images in `assets/`. A screenshot named `assets/screenshot.png` is referenced
-by the main README, and a README with an image reads as finished in a way one
-without an image does not.
+---
 
-**Write these as you go.** A weekly report written on the last day is obvious to
-read and worth very little.
+## 1. Overview
+GradePulse allows HAU students to track their ongoing course grades using custom syllabus weights (e.g., Exams 40%, Projects 30%, Quizzes 30%). Its interactive forecaster computes target exam scores needed to achieve desired end-of-term letter grades.
+
+---
+
+## 2. Setup and Installation
+
+### Prerequisites
+- **Node.js**: v18 or higher
+- **PostgreSQL**: v14 or higher
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/nickmorata07/fullstack-final-project.git](https://github.com/nickmorata07/fullstack-final-project.git)
+   cd fullstack-final-project
