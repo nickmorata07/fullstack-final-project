@@ -59,3 +59,11 @@ looks exactly like what it is.
 - **File:** `README.md`
 - **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
 - **What it does and why we kept it:** Defines the project documentation structure (overview, installation, running instructions, features, and project structure) so external readers can run and evaluate the application from source code alone.
+
+### 2026-09-27 - PostgreSQL schema and Express API endpoint generation
+
+- **Tool:** Gemini
+- **What I asked for:** Code templates for `server/schema.sql`, PostgreSQL `pg.Pool` connection pool (`server/db.js`), and Express API routes (`server/index.js`).
+- **What it gave back:** SQL schema DDL scripts, pool connection code using `dotenv`, and REST endpoints (`GET /api/courses`, `POST /api/courses`, `GET /api/courses/:id`).
+- **What I kept, what I changed, and why:** Kept the parameterized query structure (`$1`, `$2`) for security and added custom table definitions (`courses`, `category_weights`, `assessment_scores`) specific to HAU course grading rules.
+- **Commit:** https://github.com/nickmorata07/fullstack-final-project/commit/main
